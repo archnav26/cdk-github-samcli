@@ -10,8 +10,13 @@ Dependency install:
 Codebase: https://github.com/nspacer/sam-cdk
 
 cdk init sample-app --Language=python
+
 cdk synth
+
 sam local invoke sam-cdk --no-event -t cdk.out/CdkSamStack.template.json
+
 cdk bootstrap
+
 cdk deploy
+
 cdk destroy
