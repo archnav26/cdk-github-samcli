@@ -12,8 +12,12 @@ Codebase: https://github.com/nspacer/sam-cdk
 cdk init sample-app --Language=python
 
 python3 -m venv .venv
+
 source .venv/bin/activate   # On Linux/macOS
+
 .venv\Scripts\activate      # On Windows
+
+ pip install -r requirements.txt 
 
 cdk synth
 
